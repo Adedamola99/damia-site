@@ -42,7 +42,7 @@ export default function Home() {
             I am a{' '}
             <span>
               <Typewriter
-                words={['FullStack Developer', 'Technical Writer']}
+                words={['Frontend Developer', 'Technical Writer']}
                 loop={0}
                 cursor
                 cursorStyle='_'
