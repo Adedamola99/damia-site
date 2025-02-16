@@ -1,17 +1,29 @@
-'use client'
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { FaDownload, FaTimes } from 'react-icons/fa';
-import Image from 'next/image'; 
-import ClientA from '../../assets/images/client1.jpg'
-import ClientB from '../../assets/images/client2.jpg'
-import ClientC from '../../assets/images/client4.jpg'
-import ProfileImage from '../../assets/images/profile.jpg'
+"use client";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { FaDownload, FaTimes } from "react-icons/fa";
+import Image from "next/image";
+import ClientA from "../../assets/images/client1.jpg";
+import ClientB from "../../assets/images/client2.jpg";
+import ClientC from "../../assets/images/client4.jpg";
+import ProfileImage from "../../assets/images/profile.jpg";
 
 const testimonials = [
-  { image: ClientA, name: "Dolapo", text: "Damola is an incredible developer! Delivered the project ahead of schedule and exceeded expectations." },
-  { image: ClientB, name: "Bimbo", text: "Exceptional attention to detail. Highly recommend Damola to anyone in need of a reliable developer." },
-  { image: ClientC, name: "Nathaniel", text: "The best experience I've had with a developer. Responsive and brought great ideas to the table." },
+  {
+    image: ClientA,
+    name: "Timileyin",
+    text: "Damola is an incredible developer! Delivered the project ahead of schedule and exceeded expectations.",
+  },
+  {
+    image: ClientB,
+    name: "Bimbo",
+    text: "Exceptional attention to detail. Highly recommend Damola to anyone in need of a reliable developer.",
+  },
+  {
+    image: ClientC,
+    name: "David",
+    text: "The best experience I've had with a developer. Responsive and brought great ideas to the table.",
+  },
 ];
 
 export default function About() {
@@ -33,7 +45,7 @@ export default function About() {
           className="text-2xl lg:text-4xl font-bold mb-4"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
-          style={{ fontFamily: 'Poppins, sans-serif' }}
+          style={{ fontFamily: "Poppins, sans-serif" }}
         >
           About Me
         </motion.h1>
@@ -43,7 +55,10 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 0.7 } }}
         >
-          I’m Adebitan Damola, a Frontend Developer passionate about creating clean and efficient solutions. My journey started from curiosity, and now I help businesses build scalable apps. I enjoy working on creative projects and solving real-world problems.
+          I’m Adebitan Damola, a Frontend Developer passionate about creating
+          clean and efficient solutions. My journey started from curiosity, and
+          now I help businesses build scalable apps. I enjoy working on creative
+          projects and solving real-world problems.
         </motion.p>
 
         <motion.p
@@ -51,7 +66,11 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.5 } }}
         >
-          In my free time, I enjoy playing football, listening to music, and learning new languages. I find myself to be an ambitious, hardworking and resolute individual. And I am a 100% team player who works diligently toward achieving the best result on each project I am assigned.
+          In my free time, I enjoy playing football, listening to music, and
+          learning new languages. I find myself to be an ambitious, hardworking
+          and resolute individual. And I am a 100% team player who works
+          diligently toward achieving the best result on each project I am
+          assigned.
         </motion.p>
 
         <motion.div
@@ -60,7 +79,7 @@ export default function About() {
           animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.7 } }}
         >
           <a
-            href='/Resume.pdf'
+            href="/Resume.pdf"
             download
             className="flex items-center px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition duration-300"
           >
@@ -98,7 +117,7 @@ export default function About() {
               className="absolute top-4 right-4 text-secondary-text hover:text-gray-900"
               onClick={closeModal}
             >
-              <FaTimes className='text-gray-900' />
+              <FaTimes className="text-gray-900" />
             </button>
 
             <div
@@ -111,17 +130,24 @@ export default function About() {
                 width={80}
                 height={80}
                 className="rounded-full mb-4 h-20"
-                
               />
-              <p className="italic text-gray-800 mb-4 text-center">{testimonials[currentTestimonial].text}</p>
-              <h3 className="font-semibold text-gray-900">{testimonials[currentTestimonial].name}</h3>
+              <p className="italic text-gray-800 mb-4 text-center">
+                {testimonials[currentTestimonial].text}
+              </p>
+              <h3 className="font-semibold text-gray-900">
+                {testimonials[currentTestimonial].name}
+              </h3>
 
               <div className="flex justify-center space-x-2 mt-4">
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentTestimonial(index)}
-                    className={`w-3 h-3 rounded-full ${currentTestimonial === index ? 'bg-blue-600' : 'bg-gray-300'}`}
+                    className={`w-3 h-3 rounded-full ${
+                      currentTestimonial === index
+                        ? "bg-blue-600"
+                        : "bg-gray-300"
+                    }`}
                   ></button>
                 ))}
               </div>
