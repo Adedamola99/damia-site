@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
   service: process.env.NEXT_PUBLIC_EMAIL_HOST,
@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 const sendEmail = async (to, subject, html) => {
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_EMAIL_USER,
-    to: 'adebitandamola02@gmail.com', 
+    to: "adebitandamola02@gmail.com",
     subject,
     html,
   };
@@ -19,7 +19,7 @@ const sendEmail = async (to, subject, html) => {
   try {
     await transporter.sendMail(mailOptions);
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error("Error sending email:", error);
   }
 };
 

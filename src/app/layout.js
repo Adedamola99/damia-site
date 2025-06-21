@@ -1,9 +1,9 @@
-import ClientRootLayout from '@/components/ClientRootLayout'; 
-import './globals.css';
+import ClientRootLayout from "@/components/ClientRootLayout";
+import "./globals.css";
 
 export const metadata = {
-  title: 'Portfolio',
-  description: 'My personal portfolio',
+  title: "Portfolio",
+  description: "My personal portfolio",
 };
 
 export default function RootLayout({ children }) {

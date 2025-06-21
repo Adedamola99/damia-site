@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import projects from "@/data/project";
@@ -9,14 +9,15 @@ const categories = ["All", "Web Development", "Articles"];
 const Work = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const filteredProjects = selectedCategory === "All"
-    ? projects
-    : projects.filter((project) => project.category === selectedCategory);
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
 
   return (
     <div className="px-2 py-4 lg:px-8 lg:py-10 mt-14 lg:mt-0">
       <h2 className="text-3xl font-bold mb-6">My Projects</h2>
-      
+
       <div className="mb-6 flex flex-wrap gap-4">
         {categories.map((category) => (
           <button
@@ -44,11 +45,13 @@ const Work = () => {
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
             >
-                <Link href={project.link}>
-                    <Slideshow image={project.image} />
-                </Link>
+              <Link href={project.link}>
+                <Slideshow image={project.image} />
+              </Link>
               <div className="p-4">
-                <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {project.title}
+                </h3>
                 <p className="text-gray-600">{project.category}</p>
               </div>
             </motion.div>
@@ -72,4 +75,4 @@ export const Slideshow = ({ image }) => (
   </AnimatePresence>
 );
 
-export default Work
+export default Work;
