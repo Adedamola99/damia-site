@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a **FullStack Developer, Technical Writer, and Mobile App Developer**. It also highlights the technology stack I've used to build various projects, and it's designed to be responsive, sleek, and accessible.
+Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a **FullStack Developer, Technical Writer, and Wordpress Developer**. It also highlights the technology stack I've used to build various projects, and it's designed to be responsive, sleek, and accessible.
 
 ## ✨ Features
 
@@ -20,15 +20,15 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 - **React Toastify**: For elegant toast notifications.
 - **EmailJS**: Allows users to send emails directly through the contact form.
 - **Dicebear**: Avatar generation for a personalized touch.
-  
+
 ## 📁 Folder Structure
 
 ```bash
-├── node_modules       
-├── next           
-├── src           
-├── styles          
-└── README.md    
+├── node_modules
+├── next
+├── src
+├── styles
+└── README.md
 ```
 
 ## 🛠️ Setup and Installation
@@ -36,6 +36,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 To run this project locally, follow these steps:
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/Adedamola99/damia-site.git
    cd your-portfolio-repo
@@ -43,11 +44,13 @@ To run this project locally, follow these steps:
 
 2. **Install dependencies**:
    Make sure you have [Node.js](https://nodejs.org/) installed. Then, run:
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**:
+
    ```bash
    npm run dev
    ```
