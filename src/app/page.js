@@ -1,9 +1,15 @@
-'use client'
-import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaBehance } from 'react-icons/fa';
-import { Typewriter } from 'react-simple-typewriter'
-import Illustration from '../assets/images/User.gif'
-import Image from 'next/image';
+"use client";
+import { motion } from "framer-motion";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaBehance,
+} from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
+import Illustration from "../assets/images/User.gif";
+import Image from "next/image";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -19,7 +25,7 @@ export default function Home() {
             className="font-bold mb-4"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1, transition: { duration: 0.7 } }}
-            style={{ fontFamily: 'Poppins, sans-serif' }} 
+            style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Hi, My Name is
           </motion.p>
@@ -28,7 +34,7 @@ export default function Home() {
             className="text-5xl font-bold mb-4"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1, transition: { duration: 0.7 } }}
-            style={{ fontFamily: 'Poppins, sans-serif' }} 
+            style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Adebitan Damola
           </motion.h1>
@@ -39,13 +45,17 @@ export default function Home() {
             initial="hidden"
             animate="visible"
           >
-            I am a{' '}
+            I am a{" "}
             <span>
               <Typewriter
-                words={['Frontend Developer', 'Technical Writer']}
+                words={[
+                  "Frontend Developer",
+                  "Technical Writer",
+                  "Wordpress Developer",
+                ]}
                 loop={0}
                 cursor
-                cursorStyle='_'
+                cursorStyle="_"
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
@@ -59,16 +69,32 @@ export default function Home() {
             initial="hidden"
             animate="visible"
           >
-            <a href="https://github.com/Adedamola99" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Adedamola99"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="text-4xl hover:text-blue-500 transition-colors duration-300" />
             </a>
-            <a href="https://www.linkedin.com/in/adebitan-damola-0703a718b" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/adebitan-damola-0703a718b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin className="text-4xl hover:text-blue-500 transition-colors duration-300" />
             </a>
-            <a href="https://twitter.com/itz_damia" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/itz_damia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="text-4xl hover:text-blue-500 transition-colors duration-300" />
             </a>
-            <a href="https://www.behance.net/adebitandamola" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.behance.net/adebitandamola"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaBehance className="text-4xl hover:text-blue-500 transition-colors duration-300" />
             </a>
           </motion.div>
@@ -79,20 +105,32 @@ export default function Home() {
             variants={fadeInUp}
             initial="hidden"
             animate="visible"
-            onClick={() => window.open('https://wa.me/08123917221?text=Hi,%20I%20would%20like%20to%20hire%20you', '_blank')}
+            onClick={() =>
+              window.open(
+                "https://wa.me/08123917221?text=Hi,%20I%20would%20like%20to%20hire%20you",
+                "_blank"
+              )
+            }
           >
             Hire Me
           </motion.button>
         </div>
 
         <div className="hidden lg:flex justify-center lg:justify-end">
-          <div style={{ width: '100%', height: '0', paddingBottom: '116%', position: 'relative' }}>
-          <Image
-            src={Illustration}
-            alt="User Illustration"
-            width={600}  
-            height={600} 
-          />
+          <div
+            style={{
+              width: "100%",
+              height: "0",
+              paddingBottom: "116%",
+              position: "relative",
+            }}
+          >
+            <Image
+              src={Illustration}
+              alt="User Illustration"
+              width={600}
+              height={600}
+            />
           </div>
         </div>
       </div>
