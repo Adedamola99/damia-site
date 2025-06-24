@@ -55,10 +55,11 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 0.7 } }}
         >
-          I’m Adebitan Damola, a Frontend Developer passionate about creating
-          clean and efficient solutions. My journey started from curiosity, and
-          now I help businesses build scalable apps. I enjoy working on creative
-          projects and solving real-world problems.
+          I’m Adebitan Damola, a Frontend Developer and Wordpress Developer
+          passionate about creating clean and efficient solutions. My journey
+          started from curiosity, and now I help businesses build scalable web
+          apps. I enjoy working on creative projects and solving real-world
+          problems.
         </motion.p>
 
         <motion.p

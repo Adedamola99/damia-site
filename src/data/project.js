@@ -12,6 +12,7 @@ import Sample10 from "../assets/images/sample10.jpeg";
 import Sample11 from "../assets/images/sample11.png";
 import Sample12 from "../assets/images/sample12.png";
 import samp23 from "../assets/images/samp23.png";
+import Sample14 from "../assets/images/shopping.png";
 
 const projects = [
   {
@@ -27,6 +28,13 @@ const projects = [
     image: Sample12,
     category: "Web Development",
     link: "https://archeglobal.net/",
+  },
+  {
+    id: 43,
+    title: "Ecommerce App",
+    image: Sample14,
+    category: "Web Development",
+    link: "https://damia-shopping-app.netlify.app/",
   },
   {
     id: 3,
