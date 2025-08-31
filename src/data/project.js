@@ -13,6 +13,10 @@ import Sample11 from "../assets/images/sample11.png";
 import Sample12 from "../assets/images/sample12.png";
 import samp23 from "../assets/images/samp23.png";
 import Sample14 from "../assets/images/shopping.png";
+import Sample13 from "../assets/images/sample13.png";
+import Sample15 from "../assets/images/sample15.png";
+import Sample16 from "../assets/images/sample16.png";
+import Sample17 from "../assets/images/sample17.png";
 
 const projects = [
   {
@@ -112,6 +116,34 @@ const projects = [
     image: Sample8,
     category: "Web Development",
     link: "https://adedamola99.github.io/simple-to-do-project/",
+  },
+  {
+    id: 14,
+    title: "Advice Generator App",
+    image: Sample13,
+    category: "Web Development",
+    link: "https://advice-generator-4ql8vkr2c-adedamola99s-projects.vercel.app/",
+  },
+  {
+    id: 15,
+    title: "Age Calculator",
+    image: Sample15,
+    category: "Web Development",
+    link: "https://age-calculator-mu-navy.vercel.app/",
+  },
+  {
+    id: 16,
+    title: "Calculator",
+    image: Sample16,
+    category: "Web Development",
+    link: "https://calculator-sable-five-42.vercel.app/",
+  },
+  {
+    id: 17,
+    title: "Key Steps to Build a Responsive Website",
+    image: Sample17,
+    category: "Articles",
+    link: "https://medium.com/@adebitandamola02/key-steps-to-build-a-responsive-website-and-why-its-important-4126f23c03a8",
   },
   // {
   //     id: 13,
