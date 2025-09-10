@@ -38,7 +38,7 @@ const projects = [
     title: "Ecommerce App",
     image: Sample14,
     category: "Web Development",
-    link: "https://damia-shopping-app.netlify.app/",
+    link: "https://shopping-cart-delta-three.vercel.app/",
   },
   {
     id: 3,

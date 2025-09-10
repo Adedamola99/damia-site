@@ -80,7 +80,7 @@ export default function About() {
           animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.7 } }}
         >
           <a
-            href="/cv.pdf"
+            href="/adebitan-damola-cv.pdf"
             download
             className="flex items-center px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition duration-300"
           >
