@@ -8,7 +8,7 @@ import Sample6 from "../assets/images/sample6.png";
 import Sample7 from "../assets/images/sample7.png";
 import Sample8 from "../assets/images/sample8.png";
 import Sample9 from "../assets/images/sample9.png";
-import Sample10 from "../assets/images/sample10.jpeg";
+import Sample10 from "../assets/images/sample10.png";
 import Sample11 from "../assets/images/sample11.png";
 import Sample12 from "../assets/images/sample12.png";
 import samp23 from "../assets/images/samp23.png";
@@ -24,7 +24,7 @@ const projects = [
     title: "Non Profit Organization Website",
     image: Sample10,
     category: "Web Development",
-    link: "http://herdreaminitiative.com/",
+    link: "http://herdreaminitiative.org/",
   },
   {
     id: 2,
