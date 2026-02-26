@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Comment Application",
+    title: "Fleet Web App",
     image: samp23,
     category: "Web Development",
     link: "https://react-comment-app-tau.vercel.app/",
